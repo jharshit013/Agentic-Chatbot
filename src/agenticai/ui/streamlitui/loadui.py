@@ -38,9 +38,9 @@ class LoadStreamlitUI:
             )
 
             if self.user_controls["selected_usecase"] == "Chatbot 2.0":
-                self.user_controls["TAVILY_API_KEY"] = st.session_state[
-                    "TAVILY_API_KEY"
-                ] = st.text_input("TAVILY API KEY", type="password")
+                os.environ["TAVILY_API_KEY"] = self.user_controls["TAVILY_API_KEY"] = (
+                    st.session_state["TAVILY_API_KEY"]
+                ) = st.text_input("TAVILY API KEY", type="password")
 
                 if not self.user_controls["TAVILY_API_KEY"]:
                     st.warning(

@@ -9,7 +9,7 @@ class BasicChatbotNode:
 
     def process(self, state: State) -> dict:
         """
-        Process the input state and generates a hatbor response.
+        Process the input state and generates a chatbot response.
         """
 
         response = self.llm.invoke(state["messages"])
