@@ -1,6 +1,6 @@
 langchain
 langchain_community
-langchain_groq
+langchain-groq
 langchain_core
 langgraph
 faiss-cpu
